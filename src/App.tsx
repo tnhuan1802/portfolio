@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import IntroText from "./components/IntroText";
+import IntroPage from "./components/IntroPage/IntroPage";
+import MainPage from "./components/MainPage/MainPage";
 
 const App = () => {
   return (
     <div className="App">
-      <IntroText />
+      <IntroPage />
+      <MainPage />
     </div>
   )
 };

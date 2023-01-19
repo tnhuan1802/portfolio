@@ -1,13 +1,14 @@
-import React from "react";
+import * as React from "react";
 import Typewriter from "typewriter-effect";
-import './IntroText.css'
-interface PropsType {}
+import "./IntroText.css";
 
-const IntroText = (props: PropsType) => {
+interface IIntroTextProps {}
+
+const IntroText: React.FC<IIntroTextProps> = (props) => {
   return (
     <div className="intro-text">
       <Typewriter
-        onInit={(typewriter) => {
+        onInit={(typewriter: any) => {
           typewriter
             .changeDeleteSpeed("natural")
             .typeString("Welcome!")
